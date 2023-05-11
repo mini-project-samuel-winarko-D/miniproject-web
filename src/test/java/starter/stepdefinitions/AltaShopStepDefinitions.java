@@ -70,7 +70,7 @@ public class AltaShopStepDefinitions extends UIInteractions {
     public void userMenujuHalamanUtamaDariAltaShop(Actor actor) {
     }
 
-    @Then("user gagal melakukan registrasi dan masih pada halaman registrasi")
+    @Then("{actor} gagal melakukan registrasi dan masih pada halaman registrasi")
     public void userGagalMelakukanRegistrasiDanMasihPadaHalamanRegistrasi(Actor actor) {
         actor.attemptsTo(Ensure.that(AltaRegisterPage.ERROR_REGISTER).hasText("ERROR"));
     }
