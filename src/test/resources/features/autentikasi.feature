@@ -5,7 +5,7 @@ Feature: Autentikasi berupa register dan login pada web AltaShop
     Given user menuju halaman registrasi AltaShop
     And user memasukkan nama lengkap "someone"
     And user memasukkan email "someone@mail.com"
-    And user memasukkan password "samuel123"
+    And user memasukkan password "someone123"
     And user menekan tombol register
     Then user menuju halaman login
 
@@ -21,8 +21,8 @@ Feature: Autentikasi berupa register dan login pada web AltaShop
   @Login @NormalPositive
   Scenario: User melakukan login dengan mengisi email dan password sesuai registrasi
     Given user menuju halaman Login AltaShop
-    And user memasukkan email "samuelwnrko@gmail.com"
-    And user memasukkan password "samuel123"
+    And user memasukkan email "someone@mail.com"
+    And user memasukkan password "someone123"
     And user menekan tombol Login
     Then user menuju halaman utama dari AltaShop
 
